@@ -91,11 +91,11 @@ static NSString * const CONST_DROPPED = @"droppedFile";
         if ([pboard availableTypeFromArray:types] != nil) {
             NSData *pbData = [pboard dataForType:NSStringPboardType];
             NSString *str = [[NSString alloc] initWithData:pbData encoding:NSUTF8StringEncoding];
-
+            NSString *lowerStr = [str lowercaseString];
             NSString *result = nil;
-            NSRange match = [str rangeOfString:@"[0-9a-f]+" options:NSRegularExpressionSearch];
+            NSRange match = [lowerStr rangeOfString:@"[0-9a-f]+" options:NSRegularExpressionSearch];
             if (match.location != NSNotFound) {
-                result = [str substringWithRange:match];
+                result = [lowerStr substringWithRange:match];
                 if (result.length == 32) {
                     [sourceMD5 setStringValue:result];
                     NSLog(@"Pasteboard: %@", result);
