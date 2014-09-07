@@ -44,6 +44,10 @@ How-To Use
 
 Release Notes 
 --------------------
+Version 1.1
+
+- Convert uppercase characters to lowercase when the string fetched from the Pasteboard.
+
 Version 1.0
 
 - First release.
