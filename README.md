@@ -44,7 +44,7 @@ How-To Use
 
 Uninstall
 --------------------
-To remove TextFileXpander.app from your Applications folder.
+To remove CheckMD5.app from your Applications folder.
 
 Release Notes 
 --------------------
