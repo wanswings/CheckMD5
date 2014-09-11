@@ -42,6 +42,10 @@ How-To Use
 
 ![](https://raw.github.com/wanswings/CheckMD5/master/screenshots/screenshot4.png)
 
+Uninstall
+--------------------
+To remove TextFileXpander.app from your Applications folder.
+
 Release Notes 
 --------------------
 Version 1.1
